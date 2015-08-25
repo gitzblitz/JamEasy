@@ -132,6 +132,16 @@ padding-top:18px;
 }
 
 
+
+iframe {
+width:100%;
+height:500px;
+}
+
+
+
+
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
   

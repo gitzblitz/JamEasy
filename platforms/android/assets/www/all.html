@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+    <meta name="viewport" content="user-scalable=no, 
+    initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width">
+       
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,100,300" rel="stylesheet" type="text/css">
+		
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+        
+    /*custom css*/
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        
+		<title>JamEasy</title>
+	</head>
+	<body>
+    
+    
+    <!--------------------------------------------------------------------------------
+------------------------- SWIPE RIGHT ------------------------------------
+---------------------------------------------------------------------------------->
+    
+    <div data-role="page" id="home" data-theme="a" data-url="home">
+    
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+     <div id="logo" class="logo ui-title">
+        <h1>Aweh UCT homie...</h1>    
+        </div>
+      </div>
+      
+ 
+ <!--Content Start-->
+
+<!--Grid-->
+<div class="ui-grid-a home">
+<div class="box"> </div><!-- /box -->
+
+   	<!--LEFT-COLUMN---->
+    <div class="ui-block-a">
+    
+    	<!--HUNGRY Block LEFT-A---->
+    	<div class="ui-bar ui-bar-a block">
+    	<div class="blockImage">
+        	<a href="#jammies" data-transition="slide">
+             <img src="img/hungry.png" alt="logo"/> 
+             </a>
+        </div>
+        <div class="blockHeading padding">
+        	<p>Hungry?</p>
+        </div>
+   		</div>
+
+        <!--ATM Block LEFT-A-->
+        <div class="ui-bar ui-bar-a block">
+		<div class="blockImage">
+        	<a href="#jammies" data-transition="slide">
+             <img src="img/atm.png" alt="atm"/> 
+             </a>
+        </div>
+        <div class="blockHeading padding">
+          	<p>Wallet empty?</p>   
+		</div>
+    </div>
+        
+        <!--FITNESS Block-->
+        <div class="ui-bar ui-bar-a block">
+       <div class="blockImage">
+        	<a href="#jammies" data-transition="slide">
+             <img src="img/exercise.png" alt="logo"/> 
+             </a>
+        </div>
+        <div class="blockHeading padding">
+        	<p>Working on your fitness?</p>
+        </div>   
+    </div>
+        
+    </div>  
+     <!--END OF LEFT COLUMN-->
+      
+      
+      <!--RIGHT-COLUMN---->
+	<div class="ui-block-b">
+    <!--CULTURE Block RIGHT-B-->
+    <div class="ui-bar ui-bar-a block">
+		<div class="blockImage">
+			<a href="#jammies" data-transition="slide">
+			<img src="img/culture.png" alt="culture"/> 
+			</a>
+		</div>
+		<div class="blockHeading padding">
+			<p>Wanna get cultural?</p>
+		</div>
+	</div>
+
+     <!--FEELING STUDIOUS Block RIGHT-B-->
+    <div class="ui-bar ui-bar-a block">
+		<div class="blockImage">
+        	<a href="#jammies" data-transition="slide">
+             <img src="img/studious.png" alt="logo"/> 
+             </a>
+        </div>
+        <div class="blockHeading padding">
+        	<p>Feeling studious?</p>
+        </div>
+    </div>
+    
+    <!--CANT DECIDE Block Right-B-->
+    <div class="ui-bar ui-bar-a block">
+		<div class="blockImage">
+        	<a href="#jammies" data-transition="slide">
+             <img src="img/question.png" alt="logo"/> 
+             </a>
+        </div>
+        <div class="blockHeading padding">
+        	<p>Can't decide?</p>
+        </div>
+    </div>
+    
+    
+    </div>
+ <!--END OF RIGHT-COLUMN---->
+        
+   
+</div><!-- /grid-a -->
+
+<!--Content End-->
+
+<!--PANEL NAVIGATION START-->
+    <div data-role="panel" id="left-panel" data-theme="a" class="panel">
+        <a href="home.html" data-icon="gear"><p>Home</p></a>
+         <a href="#jammies" data-icon="gear"><p>Jammie Stops</p></a>
+         <a href="hiddingh.html" data-icon="gear"><p>Maps</p></a>
+		<hr>
+        <p>Restaurant</p>
+        <p>Culture</p>
+        <p>ATM</p>
+        <p>Academic</p>
+        <p>Exercise</p>
+        <hr>
+        <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="notext"></a>
+    </div>
+<!--PANEL NAVIGATION End-->
+    
+    
+    <!--Footer-->
+<div data-role="footer" data-position="fixed"  
+   data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="home.html" data-icon="gear" 
+             class="left">
+             <img src="img/icons/hom-icon.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<!--<div>
+		<a href="maps.html" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="img/icons/hom-icon.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>-->
+	<!--Back Link-->	
+	<div>
+		<a href="back.html" data-icon="gear" 
+             class="right">
+             <img src="img/icons/back-icon.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+<!--Footer End-->
+    
+    
+    
+</div> 
+   
+<!--------------------------------------------------------------------------------
+------------------------- HOME PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+    
+    
+<!--HOME PAGE-->
+<div data-role="page" id="home" data-theme="a">
+
+<!--Header-->
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div id="logo" class="logo ui-title">
+        <h1>AWEH UCT HOMIE...</h1>   
+        </div>
+      </div>
+<!--Header End -->
+
+<!--Content Start FOR NAV-->
+
+
+<!--Content End FOR NAV-->
+        
+<!--Footer-->
+     <div data-role="footer" data-position="fixed"  
+      data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="home.html" data-icon="gear" 
+             class="left">
+             <img src="img/icons/hom-icon.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<!--<div>
+		<a href="maps.html" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="img/icons/hom-icon.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>-->
+	<!--Back Link-->	
+	<div>
+		<a href="back.html" data-icon="gear" 
+             class="right">
+             <img src="img/icons/back-icon.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+<!--Footer End-->
+      
+    </div>
+<!--HOME PAGE END-->
+    
+    
+<!--------------------------------------------------------------------------------
+------------------------- WHERE YA GOING PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+        
+    
+<!--WHERE YA GOING PAGE-->
+    <div data-role="page" id="jammies" data-theme="a">
+ 
+ <!--Header-->
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div class="logo ui-title">
+        <h1>Where ya going?</h1>               
+        </div>
+      </div>
+<!--Header End -->
+      
+ <!--Content-->
+      <div data-role="content" data-theme="a"> 
+            
+	  <div class="ui-grid-a">
+	  
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour1">
+       <a href="#hiddingh" data-transition="fade">
+          <img src="img/hiddingh_hall.png" alt="hiddingh"/></a>
+       <h1>HIDDINGH HALL</h1></div></div>
+       
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour2">
+       <a href="#obz" data-transition="fade">
+          <img src="img/obz_square.png" alt="obz"/></a>
+       <h1>OBZ SQUARE</h1></div></div>
+       
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour3">
+        <a href="#mont" data-transition="fade">
+          <img src="img/claremont.png" alt="mont"/></a>
+        <h1>CLAREMONT</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour4">
+        <a href="#dean" data-transition="fade">
+          <img src="img/dean_street.png" alt="dean"/></a>
+        <h1>DEAN STREET</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour5" >
+                <a href="#rochester" data-transition="fade">
+          <img src="img/rochester.png" alt="rochester"/></a>
+        <h1>ROCHESTER</h1></div></div>
+        
+	  <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour1">
+            <a href="#clarinusmed" data-transition="fade">
+          <img src="img/clarinus_and_medical_school.png" alt="clarinusmed"/></a>
+      <h1>MED SCHOOL & CLARINUS</h1></div></div>
+      
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour2" >
+             <a href="#forest" data-transition="fade">
+          <img src="img/forest_hill.png" alt="forest"/></a>
+       <h1>FOREST HILL</h1></div></div>
+       
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour3" >
+           <a href="#mobrayliesbeek" data-transition="fade">
+          <img src="img/mowbray_and_liesbeeck.png" alt="mobrayliesbeek"/></a>
+        <h1>MOWBRAY & LIESBEEK</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour4" >
+           <a href="#tugwell" data-transition="fade">
+          <img src="img/tugwell.png" alt="tugwell"/></a>
+        <h1>TUGWELL</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour5" >
+           <a href="#sandown" data-transition="fade">
+          <img src="img/sandown.png" alt="sandown"/></a>
+        <h1>SANDOWN</h1></div></div>
+      
+      </div>
+	  
+
+ <!--Option 2-->
+<!--<div data-role="collapsible-set">
+
+			<div data-role="collapsible" data-collapsed="false">
+			<h3>Hiddingh Hall</h3>
+			<p>Th Jammie with the View...</p>
+			</div>
+	
+			<div data-role="collapsible">
+			<h3>Section 2</h3>
+			<p>I'm the collapsible set content for section 2.</p>
+			</div>
+	
+	</div>
+ <!--End option 2-->
+
+
+
+ </div>
+<!--Content End-->
+      
+<!--Footer-->
+<div data-role="footer" data-position="fixed"  
+   data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="home.html" data-icon="gear" 
+             class="left">
+             <img src="img/icons/hom-icon.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<!--<div>
+		<a href="maps.html" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="img/icons/hom-icon.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>-->
+	<!--Back Link-->	
+	<div>
+		<a href="back.html" data-icon="gear" 
+             class="right">
+             <img src="img/icons/back-icon.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+<!--Footer End-->
+
+
+
+
+<!--SCRIPTS START-->
+
+
+<!--SwipeRight Script-->
+<script>
+$( document ).on( "pageinit", "#home", function() {
+    $( document ).on( "swipeleft swiperight", "#home", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft"  ) {
+                $( "#right-panel" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel" ).panel( "open" );
+            }
+        }
+    });
+});
+
+</script>
+
+<!--SCRIPTS END-->   
+	
+    </body>
+</html>

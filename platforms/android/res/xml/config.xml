@@ -63,12 +63,12 @@
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
     <allow-intent href="market:*" />
-    <name>UCT</name>
+    <name>JamEasy</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A prototype application for UCT Students to do with the Jammie Shuttle Service and Cape Town.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        JamEasy development Team
     </author>
     <content src="index.html" />
     <access origin="*" />

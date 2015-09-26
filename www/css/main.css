@@ -211,7 +211,7 @@ background-color:RGB(189,222,240);
 	width:38px;
 	height:auto;
 	float:left;
-	margin-left: 29%;
+	margin-left: 31.5%;
 }
 .right img{
 	float:right;
@@ -394,15 +394,16 @@ padding-left:5px;
 	padding-bottom:2%;
 	border:0px solid transparent;
 	top:-1px;
+	height:180px;
 }
 .attractionHeading img{
 	width:100%;
-	height:180px;
+	
 	background-color:transparent;
 	}
 	
 .attractionCategory{
-	margin-top:-24%;
+	margin-top:-20%;
 	margin-left:77%;
 	background-color:RGB(60,128,164);
 	width:60px;
@@ -420,7 +421,7 @@ padding-right:7px;
 	background-color:white;
 }
 .attraction{
-width:400%;	
+width:402%;	
 }
 .attraction p{
 width:70%;	
@@ -651,15 +652,19 @@ color:white;
 color:#fff;
 }
 
-.container_12{
-margin-left:-25px;	
-margin-right:-11px;	
-margin-top:-6px;
-margin-bottom:-25px;
-height:200px;	
+.gallery{
+	width:123.6%;
+	margin:20px;
+	padding:8px;
+	height:80px;
+	bottom:0;
+	margin-bottom:30px;
 }
-.container_12 img{
-min-width:100%;	
+.gallery img{
+	margin-top:28px;
+	margin-right:22px;
+	width:25%;
+	margin-bottom:5px;
 }
 
 

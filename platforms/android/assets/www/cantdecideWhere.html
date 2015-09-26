@@ -1,156 +1,106 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+        <head>
     
     <meta name="viewport" content="user-scalable=no, 
     initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width">
        
     <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,100,300" rel="stylesheet" type="text/css">
-
+		
+        <!-- Mapbox-->
+        <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
+		<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
+        
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
         
-		
     <!--custom css*/-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
         
         
 		<title>JamEasy</title>
 	</head>
-<body>
+<body> 
     
- 
 <!--------------------------------------------------------------------------------
-------------------------- HUNGRY HIDDINGH PAGE ------------------------------------
+------------------------- CANT DECIDE WHERE YA GOING PAGE ------------------------------------
 ---------------------------------------------------------------------------------->
         
     
-<!--RESTAURANTS HIDDINGH PAGE-->
- <div data-role="page" data-scroll="true" id="hungry_hiddingh" data-theme="a" data-url="hungry_hiddingh">
+<!--CANT DECIDE WHERE YA GOING PAGE-->
+<div data-role="page" id="jammies" data-theme="a">
  
 	<!--Header-->
-    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
       data-content-theme="a" class="ui-bar-a ui-header">
        
 	   <div class="logo ui-title">
-        <h1>Restaurants | Hiddingh Hall</h1>               
+        <h1>Where ya going?</h1>               
         </div>
-    </div>
+      </div>
 	<!--Header End -->
       
 	<!--Content-->
     <div data-role="content" data-theme="a"> 
-    
-		<!--Restaurant List-->	
-	  <div id="restaurant" class="ui-grid-a restaurantSection">
-	  
-	   <!--Restaurant Jammie Stop Image Section-->
-	   <div class="ui-block-a"><div class="ui-bar ui-bar-a restaurantHeading">
-          <img src="http://i.imgur.com/DnvTRor.png" alt="hiddingh"/>
-       </div></div>  
-       
-       	<div class="restaurant">
-			<!--Restaurant 1-->
-			<div class="ui-block-a" id="restaurant1">
-				<div class="ui-block-a col1">
-				<a href="hungry_hiddingh1.html" data-transition="flip">
-				<img class="circleImage" src="http://i.imgur.com/gxM3pi7.png" alt="restaurantImage"/></a>
-				</div>
-				<div class="ui-block-b col2">
-				<h1>The Fat Cactus</h1>
-				<p>Mexican</p>
-				<p>Festivities</p>
-				<p>R300 </p>
-				</div>
-				<div class="ui-block-c col3">
-				<img src="http://i.imgur.com/b2wMWkI.png" alt="category"/>
-				</div>
-			</div>
-			<!--Restaurant End-->
-		
-			<!--Restaurant 2-->
-			<div class="ui-block-a restaurant" id="restaurant2">
-				<div class="ui-block-a col1">
-				<a href="hungry_hiddingh2.html" data-transition="flip">
-					<img class="circleImage" src="http://i.imgur.com/wtgDChN.png" alt="restaurantImage"/>
-				</a>
-				</div>
-				<div class="ui-block-b col2">
-				<h1>Yours Truly</h1>
-				<p>Cafe</p>
-				<p>Coffee culture</p>
-				<p>R200 </p>
-				</div>
-				<div class="ui-block-c col3">
-				<img src="http://i.imgur.com/Mzf27K1.png" alt="category"/>
-				</div>
-			</div>
-			<!-- Restaurant End-->
-			
-			<!--Restaurant 3-->
-			<div class="ui-block-a restaurant" id="restaurant3">
-				<div class="ui-block-a col1">
-				<a href="hungry_hiddingh3.html" data-transition="flip">
-					<img class="circleImage" src="http://i.imgur.com/aYWFBbT.png" alt="restaurantImage"/>
-				</a>
-				</div>
-				<div class="ui-block-b col2">
-			<h1>Hudsons</h1>
-				<p>Burgers</p>
-				<p>Burgers and beer</p>
-				<p>R200 </p>
-				</div>
-				<div class="ui-block-c col3">
-				<img src="http://i.imgur.com/ca8W8me.png" alt="category"/>
-				</div>
-			</div>
-			<!--Restaurant End-->
-		
-			<!--Restaurant 4-->
-			<div class="ui-block-a restaurant" id="restaurant4">
-				<div class="ui-block-a col1">
-				<a href="hungry_hiddingh4.html" data-transition="flip">
-					<img class="circleImage" src="http://i.imgur.com/UPZ8xvR.png" alt="restaurantImage"/>
-				</a>
-				</div>
-				<div class="ui-block-b col2">
-				<h1>Myog</h1>
-				<p>Dessert</p>
-				<p>Sweet Tooth</p>
-				<p>R100</p>
-				</div>
-				<div class="ui-block-c col3">
-				<img src="http://i.imgur.com/gTilBet.png" alt="category"/>
-				</div>
-			</div>
-			<!-- Restaurant End-->
-			
-			<!--Restaurant 5-->
-			<div class="ui-block-a restaurant" id="restaurant5">
-				<div class="ui-block-a col1">
-				<a href="hungry_hiddingh5.html" data-transition="flip">
-					<img class="circleImage" src="http://i.imgur.com/HOLDaqS.png" alt="restaurantImage"/>
-				</a>
-				</div>
-				<div class="ui-block-b col2">
-				<h1>Marias</h1>
-				<p>Greek</p>
-				<p>Hidden Gem</p>
-				<p>R250 </p>
-				</div>
-				<div class="ui-block-c col3">
-				<img src="http://i.imgur.com/6wQhk9Z.png" alt="category"/>
-				</div>
-			</div>
-			<!-- Restaurant End-->
             
+	  <div class="ui-grid-a">
+	  
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour1">
+       <a href="#all_hiddingh" data-transition="slide">
+          <img src="http://i.imgur.com/DnvTRor.png" alt="hiddingh"/></a>
+       <h1>HIDDINGH HALL</h1></div></div>
+       
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour2">
+       <a href="#all_obz" data-transition="fade">
+          <img src="http://i.imgur.com/nS0SKuC.png" alt="obz"/></a>
+       <h1>OBZ SQUARE</h1></div></div>
+       
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour3">
+        <a href="#all_mont" data-transition="fade">
+          <img src="http://i.imgur.com/bjTCKQx.png" alt="mont"/></a>
+        <h1>CLAREMONT</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour4">
+        <a href="#all_dean" data-transition="fade">
+          <img src="http://i.imgur.com/EiMkpUc.png" alt="dean"/></a>
+        <h1>DEAN STREET</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour5" >
+                <a href="#all_rochester" data-transition="fade">
+          <img src="img/rochester.png" alt="rochester"/></a>
+        <h1>ROCHESTER</h1></div></div>
+        
+	  <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour1">
+            <a href="#all_clarinusmed" data-transition="fade">
+          <img src="http://i.imgur.com/oC0RFr8.png" alt="clarinusmed"/></a>
+      <h1>MED SCHOOL & CLARINUS</h1></div></div>
       
-		  </div> 
-	   </div> <!-- Restaurant List End-->
-	   
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour2" >
+             <a href="#all_forest" data-transition="fade">
+          <img src="http://i.imgur.com/bjTCKQx.png" alt="forest"/></a>
+       <h1>FOREST HILL</h1></div></div>
+       
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour3" >
+           <a href="#all_mobrayliesbeek" data-transition="fade">
+          <img src="http://i.imgur.com/d1HmAfL.png" alt="mobrayliesbeek"/></a>
+        <h1>MOWBRAY & LIESBEEK</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour4" >
+           <a href="#all_tugwell" data-transition="fade">
+          <img src="http://i.imgur.com/3XNLLMt.png" alt="tugwell"/></a>
+        <h1>TUGWELL</h1></div></div>
+        
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a jammies colour5" >
+           <a href="#all_sandown" data-transition="fade">
+          <img src="http://i.imgur.com/CtltF0Z.png" alt="sandown"/></a>
+        <h1>SANDOWN</h1></div></div>
+      
+      </div>
+	<!--grid End-->	
+	
 	</div>
 	<!--Content End-->
       
@@ -165,18 +115,162 @@
              <img src="http://i.imgur.com/Rl00iAl.png" alt="logo"/> 
         </a>
 	</div>
-	<!--MAPS Link-->
+
+	<!--BACK Link-->
 	<div>
-		<a href="#hiddingh_map" data-transition="slideup" data-icon="gear" 
-             class="middle" style="text-align:center;">
-             <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="logo"/> 
-        </a>
-	</div>
-	<!--Back Link-->	
-	<div>
-		<a href="hungry_where.html" data-icon="gear" 
+		<a href="main.html" data-icon="gear" 
              class="right">
              <img src="http://i.imgur.com/cIE2gKG.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+	<!--Footer End-->
+
+</div>
+<!--------------------------------------------------------------------------------
+------------------------- END WHERE PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+
+
+
+
+<!--------------------------------------------------------------------------------
+------------------------- RESTAURANTS HIDDINGH PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+        
+    
+<!--RESTAURANTS HIDDINGH PAGE-->
+ <div data-role="page" id="all_hiddingh" data-theme="a" data-url="all_hiddingh">
+ 
+	<!--Header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div class="logo ui-title">
+        <h1>Hiddingh Hall</h1>               
+        </div>
+    </div>
+	<!--Header End -->
+      
+	      <div data-role="content" data-theme="a"> <!-- Content start-->
+      
+              <!--Key 1-->
+            <div class="key" >
+			<div class="ui-block-a key" id="key">
+				<h1 class="white">Key	    
+	             <img class="right" src="http://i.imgur.com/LilAIpZ.png" alt="logo"/> </h1>	
+			</div>
+            </div>
+			<!--Key 1 End-->
+        
+      
+      <!--Key 2-->
+            <div class="key">
+			<div class="ui-block-a key" id="key2">
+				<div class="ui-grid-a" id="keys">
+    	            <div class="ui-block-a">
+                    <h1>Culture</h1>
+	                </div>	             
+        
+                    <div class="ui-block-b">
+                    <h1>ATM</h1>
+	                </div>	             
+        
+                    <div class="ui-block-c">
+                    <h1>Health</h1>
+	                </div>	             
+        
+                    <div class="ui-block-d">
+                    <h1>Academic</h1>
+	                </div>	             
+        
+                    <div class="ui-block-e">
+                    <h1>Food & drink</h1>
+	                </div>	             
+                
+                
+				</div>	             
+			</div>
+            </div>
+			<!--Key 2 End-->
+      
+      
+      
+      
+      <!-- MAP start-->
+      <div id="elleaiello.nfkc3dp9" class="map"> </div> <!--id is the Map ID-->
+      <!-- MAP end-->
+
+	  
+	  
+	   <!--COLLAPSIBLE RESTAURANTS HIDDINGH-->
+		<div data-role="collapsible-set">
+
+			<div id="food" data-role="collapsible" data-collapsed="false">
+			<h3>FOOD & DRINK</h3>
+			<p>List of Restaurants</p>
+			</div>
+	
+			<div id="culture" data-role="collapsible">
+			<h3>CULTURE</h3>
+			<p>I'm the collapsible set content for section 2.</p>
+			</div>
+	
+	
+			<div id="health" data-role="collapsible">
+			<h3>HEALTH</h3>
+			<p>I'm the collapsible set content for section 2.</p>
+			</div>
+	
+			<div id="academic" data-role="collapsible" style="text-align:center;" class="listItemNoIcon">
+			<h3>ACADEMIC</h3>
+			<p>I'm the collapsible set content for section 2.</p>
+			</div>
+	
+	
+			<div id="atm" data-role="collapsible">
+			<h3>ATMS</h3>
+			<p>I'm the collapsible set content for section 2.</p>
+			</div>
+	
+		</div>
+
+	  	   <!--COLLAPSIBLE RESTAURANTS HIDDINGH END-->
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      </div> <!-- Content end-->
+  
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed"  
+	data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="#homepage" data-icon="gear" 
+             class="left">
+             <img src="img/icons/home.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<!--<div>
+		<a href="maps.html" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="img/icons/hom-icon.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>-->
+	<!--Back Link-->	
+	<div>
+		<a href="#jammies" data-icon="gear" 
+             class="right">
+             <img src="img/icons/back.png" alt="logo"/> 
         </a>
 	</div>
 	</div>
@@ -189,11 +283,266 @@
 ---------------------------------------------------------------------------------->
 
 
+
+<!--------------------------------------------------------------------------------
+------------------------- RESTAURANT  1 HIDDINGH PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+
+<!--RESTAURANT 1 HIDDINGH PAGE-->
+ <div data-role="page" id="restaurant_attraction1" data-theme="a">
+ 
+	<!--Header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div class="logo ui-title">
+        <h1>Attraction Name</h1>               
+        </div>
+    </div>
+	<!--Header End -->
+      
+	<!--Content-->
+    <div data-role="content" data-theme="a"> 
+    
+		<!--Restaurant List-->	
+	  <div id="attraction" class="ui-grid-a attractionSection">
+	  
+      
+	   <!--Restaurant Jammie Stop Image Section-->
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a attractionHeading">
+       <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade">
+          <img class="attractionPop" src="img/attraction.png" alt="attraction"/>
+          </a>
+          <div data-role="popup" id="popupParis" data-overlay-theme="a" data-theme="b" data-corners="false">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">		Close</a>
+          <img class="popphoto" src="img/attraction.png" style="max-height:600px;" alt="Paris, France"></div>      
+       
+          
+       </div></div>  
+       <div class="ui-block-a"><div class="ui-bar ui-bar-a attractionCategory">
+		<img src="img/categories/health.png" alt="attraction"/>
+       </div></div>                 
+			
+            <!--Description-->
+            <div class="description">
+			<div class="ui-block-a description" id="restaurant1description">
+				<h1 class="smallHeading">Description</h1>
+                <p>Lorem Ipsem Lorem IpsemLorem Ipsem Lorem Ipsem Lorem IpsemLorem Lorem IpsemLorem Lorem IpsemLorem IpsemLorem 		Ipsem</p>
+			
+			</div>
+            </div>
+			<!--Description End-->
+            	<div class="attraction">
+		
+			<!--Opening Hours-->
+			<div class="ui-block-a attraction" id="restaurant2">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="img/icons/time.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Opening Hours</h1>
+				<p>Mon-Fri: 9:00 - 21:00</p>
+				<p>Sat: 9:00 - 23:00</p>
+				<p>Sun: Closed </p>
+				</div>
+				
+			</div>
+			<!-- Opening Hours End-->
+			
+			<!--Discounts-->
+			<div class="ui-block-a attraction" id="restaurant3">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="img/icons/discounts.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Discounts</h1>
+				<p >Lorem Ipsum Lorem Ipsum</p>
+                <p >Lorem Ipsum</p>
+				
+				</div>
+				
+			</div>
+			<!--Discounts End-->
+		
+			<!--Known For-->
+			<div class="ui-block-a restaurant" id="restaurant4">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="img/icons/known.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Known For</h1>
+				<p>Healthy Shots</p>
+				
+				</div>
+				
+			</div>
+			<!-- Known For End-->
+			
+			<!--WIFI-->
+			<div class="ui-block-a restaurant" id="restaurant5">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="img/icons/wifi.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">WI-Fi</h1>
+				<p>30MB Free</p>
+				
+				</div>
+				
+			</div>
+			<!-- Wifi End-->
+            
+            <!--Contact-->
+			<div class="ui-block-a restaurant" id="restaurant5">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="img/icons/contact.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Contact</h1>
+				<p>(021) 445 2854</p>
+				<p>restaurant@gmail.com</p>
+				
+				</div>
+				
+			</div>
+			<!-- Contact End-->
+            
+      
+		  </div> 
+          
+                <!--Directions-->
+            <div class="directions" >
+			<div class="ui-block-a directions" id="directions">
+				<a href="#restaurant_attraction1_directions" data-transition="slideup"><h1 class="smallHeading white">Do you need directions?</h1></a>
+			</div>
+            </div>
+			<!--Directions End-->
+            
+	   </div> <!-- Restaurant List End-->
+	   
+	</div>
+	<!--Content End-->
+      
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed"  
+	data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="#homepage" data-icon="gear" 
+             class="left">
+             <img src="img/icons/home.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<div>
+		<a href="#all_hiddingh" data-transition="slideup" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="img/icons/map.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>
+	<!--Back Link-->	
+	<div>
+		<a href="#restaurants_hiddingh" data-icon="gear" 
+             class="right">
+             <img src="img/icons/back.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+	<!--Footer End-->
+
+</div><!--Page End-->
+
+
+
+<!--------------------------------------------------------------------------------
+------------------------- RESTAURANT 1 HIDDINGH PAGE END------------------------------------
+---------------------------------------------------------------------------------->
+
+
+
+<!--------------------------------------------------------------------------------
+------------------------- Directions RESTAURANT  1 HIDDINGH PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+
+<!--RESTAURANT 1 HIDDINGH PAGE-->
+ <div data-role="page" id="restaurant_attraction1_directions" data-theme="a">
+ 
+	<!--Header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div class="logo ui-title">
+        <h1>Attraction Name</h1>               
+        </div>
+    </div>
+	<!--Header End -->
+      
+	<!--Content-->
+    <div data-role="content" data-theme="a"> 
+    	
+            <!--Directions-->
+            <div class="directions" >
+			<div class="ui-block-a directions yourdirections" id="yourdirections">
+				<h1 class="smallHeading white">Directions</h1>
+			</div>
+            </div>
+			<!--Directions End--> 
+                 
+                    
+       
+           
+	
+	   
+	</div>
+	<!--Content End-->
+      
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed"  
+	data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="#homepage" data-icon="gear" 
+             class="left">
+             <img src="img/icons/home.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<div>
+		<a href="#all_hiddingh" data-transition="slideup" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="img/icons/map.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>
+	<!--Back Link-->	
+	<div>
+		<a href="#restaurant_attraction1" data-icon="gear" 
+             class="right">
+             <img src="img/icons/back.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+	<!--Footer End-->
+
+</div><!--Page End-->
+
+
+
+<!--------------------------------------------------------------------------------
+------------------------- Directions to RESTAURANT 1 HIDDINGH PAGE END------------------------------
+---------------------------------------------------------------------------------->
+
+
+
+
+
+
 <!--------------------------------------------------------------------------------
 ------------------------- HIDDINGH MAP------------------------------------
 ---------------------------------------------------------------------------------->
 
-<div data-role="page" id="hiddingh_map" data-theme="a" data-url="hiddingh_map">
+<div data-role="page" id="#hiddingh_map" data-theme="a" data-url="hiddingh_map">
       
      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
       data-content-theme="a" class="ui-bar-a ui-header">
@@ -260,23 +609,23 @@
 
 	<!--HOME Link-->	
 	<div>
-		<a href="main.html" data-icon="gear" 
+		<a href="#homepage" data-icon="gear" 
              class="left">
-             <img src="http://i.imgur.com/Rl00iAl.png" alt="logo"/> 
+             <img src="img/icons/home.png" alt="logo"/> 
         </a>
 	</div>
 	<!--MAPS Link-->
 	<div>
-		<a href="#hungry_hiddingh" data-icon="gear" 
+		<a href="maps_hiddingh.html" data-icon="gear" 
              class="middle" style="text-align:center;">
-             <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="logo"/> 
+             <img src="img/icons/map.png" style="text-align:center;" alt="logo"/> 
         </a>
 	</div>
 	<!--Back Link-->	
 	<div>
-		<a href="#hungry_hiddingh" data-icon="gear" 
+		<a href="#restaurant_attraction1" data-icon="gear" 
              class="right">
-             <img src="http://i.imgur.com/cIE2gKG.png" alt="logo"/> 
+             <img src="img/icons/back.png" alt="logo"/> 
         </a>
 	</div>
 	</div>
@@ -299,6 +648,26 @@
 <!---------------------------------------SCRIPTS START------------------------------------------>
 <!---------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------->
+
+<!--SwipeRight Script-->
+<script>
+$( document ).on( "pageinit", "#home", function() {
+    $( document ).on( "swipeleft swiperight", "#home", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft"  ) {
+                $( "#right-panel" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel" ).panel( "open" );
+            }
+        }
+    });
+});
+
+</script>
+
 
 
 <script>
@@ -637,12 +1006,7 @@ myLayer.setGeoJSON(geojson);
 
 </script>
 
-<script type="text/javascript">
-        SyntaxHighlighter.autoloader(
-          'js jscript javascript  http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js'
-        );
-        SyntaxHighlighter.all();
-    </script>
+
 
 
 <!--SCRIPTS END-->   

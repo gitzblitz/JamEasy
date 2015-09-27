@@ -653,17 +653,17 @@ color:#fff;
 }
 
 .gallery{
-	width:123.6%;
-	margin:20px;
-	padding:8px;
-	height:70px;
+	width:100%;
+	padding:5px;
+	height:60px;
 	bottom:0;
 	margin-bottom:30px;
 }
 .gallery img{
 	margin-top:28px;
-	margin-right:-2px;
-	width:47%;
+	margin-right:2px;
+	margin-left:-0.8px;
+	width:48%;
 	margin-bottom:5px;
 }
 

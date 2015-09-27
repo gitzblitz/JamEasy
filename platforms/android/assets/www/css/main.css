@@ -656,14 +656,14 @@ color:#fff;
 	width:123.6%;
 	margin:20px;
 	padding:8px;
-	height:80px;
+	height:70px;
 	bottom:0;
 	margin-bottom:30px;
 }
 .gallery img{
 	margin-top:28px;
-	margin-right:22px;
-	width:25%;
+	margin-right:-2px;
+	width:47%;
 	margin-bottom:5px;
 }
 

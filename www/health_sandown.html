@@ -8,10 +8,6 @@
        
     <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,100,300" rel="stylesheet" type="text/css">
-		
-        <!-- Mapbox-->
-        <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
-		<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
         
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
@@ -19,25 +15,24 @@
         
     <!--custom css*/-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-        
-        
-		<title>JamEasy | Hiddingh | Health</title>
+      
+	<title>JamEasy | Sandown | Health</title>
 	</head>
 <body>
 
 <!--------------------------------------------------------------------------------
-------------------------- HEALTH HIDDINGH PAGE ------------------------------------
+------------------------- HEALTH Sandown PAGE ------------------------------------
 ---------------------------------------------------------------------------------->
          
-<!--HEALTH HIDDINGH PAGE-->
- <div data-role="page" data-scroll="true"  id="health_hiddingh" data-theme="a">
+<!--HEALTH Sandown PAGE-->
+ <div data-role="page" id="health_claremont" data-theme="a">
  
 	<!--Header-->
     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
       data-content-theme="a" class="ui-bar-a ui-header">
        
 	   <div class="logo ui-title">
-        <h1>Health | Hiddingh Hall</h1>               
+        <h1>Health | Sandown</h1>               
         </div>
     </div>
 	<!--Header End -->
@@ -50,7 +45,7 @@
 	  
 	   <!--Health Jammie Stop Image Section-->
 	   <div class="ui-block-a"><div class="ui-bar ui-bar-a restaurantHeading">
-          <img src="http://i.imgur.com/DnvTRor.png" alt="hiddingh"/>
+          <img src="http://i.imgur.com/DnvTRor.png" alt="Sandown"/>
        </div></div>  
        
        	<div class="restaurant">
@@ -58,54 +53,14 @@
 			<!--Health 1-->
 			<div class="ui-block-a" id="health1">
 				<div class="ui-block-a col1">
-					<a href="health_hiddingh1.html" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/7II2v7r.png" alt="healthImage"/></a>
+					<a href="#health_attraction1" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/qaRBJfH.png" alt="healthImage"/></a>
 				</div>
 				<div class="ui-block-b col2">
-					<h1>Virgin Active</h1>
-					<p>Cost: R260 per month</p>
-					<p>Contact: (021) 462 6239</p>
+					<h1>Oops!</h1>
+					<p>You won't find anything healthy here...</p>
 				</div>
 			</div>
-			<!--Health 1 End-->
-		
-			<!--Health 2-->
-			<div class="ui-block-a" id="health2">
-				<div class="ui-block-a col1">
-					<a href="health_hiddingh2.html" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/Uf1qx9h.png" alt="healthImage"/></a>
-				</div>
-				<div class="ui-block-b col2">
-					<h1>Zone Fitness</h1>
-					<p>Cost: R200 per month</p>
-					<p>Contact: (021) 422 2909</p>
-				</div>
-			</div>
-			<!-- Health 2 End-->
-			
-			<!--Health 3-->
-			<div class="ui-block-a" id="health3">
-				<div class="ui-block-a col1">
-					<a href="health_hiddingh3.html" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/gQ2ydVe.png" alt="healthImage"/></a>
-				</div>
-				<div class="ui-block-b col2">
-					<h1>Cape CrossFit</h1>
-					<p>Cost: 10% student discount</p>
-					<p>Contact: (021) 461 0243</p>
-				</div>	
-			</div>
-			<!--Health 3 End-->
-		
-			<!--Health 4-->
-			<div class="ui-block-a" id="health4">
-				<div class="ui-block-a col1">
-					<a href="health_hiddingh4.html" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/pw2Ld5N.png" alt="healthImage"/></a>
-				</div>
-				<div class="ui-block-b col2">
-					<h1>Long Street Baths</h1>
-					<p>Cost: R21 per day</p>
-					<p>Contact: (021) 422 0100</p>
-				</div>	
-			</div>
-			<!--Health 4 End-->          
+			<!--Health 1 End-->   
       
 		  </div> 
 	   </div> <!--Health List End-->
@@ -125,12 +80,12 @@
         </a>
 	</div>
 	<!--MAPS Link-->
-	<!--<div>
-		<a href="maps.html" data-icon="gear" 
-             class="middle" style="text-align:center;">
-             <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="logo"/> 
-        </a>
-	</div>-->
+	<div>
+		<a href="sandown_map.html" data-transition="slideup" data-icon="gear" 
+			 class="middle" style="text-align:center;">
+			 <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="map"/> 
+		</a>
+	</div>
 	<!--Back Link-->	
 	<div>
 		<a href="health_where.html" data-icon="gear" 
@@ -146,6 +101,33 @@
 <!--------------------------------------------------------------------------------
 ------------------------- END HEALTH PAGE ------------------------------------
 ---------------------------------------------------------------------------------->
+    
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------SCRIPTS START------------------------------------------>
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
 
-  </body>
+<!--SwipeRight Script-->
+<script>
+$( document ).on( "pageinit", "#home", function() {
+    $( document ).on( "swipeleft swiperight", "#home", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft"  ) {
+                $( "#right-panel" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel" ).panel( "open" );
+            }
+        }
+    });
+});
+
+</script>
+
+<!--SCRIPTS END-->   
+	
+    </body>
 </html>

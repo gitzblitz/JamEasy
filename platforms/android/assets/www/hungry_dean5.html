@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+    <meta name="viewport" content="user-scalable=no, 
+    initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width">
+       
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,100,300" rel="stylesheet" type="text/css">
+		
+        <!-- Mapbox-->
+        <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
+		<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
+        
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+        
+    <!--custom css*/-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        
+		<title>JamEasy</title>
+	</head>
+<body>
+       
+
+	   <!--------------------------------------------------------------------------------
+------------------------- RESTAURANT  5 DEAN PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+
+<!--RESTAURANT 4 DEAN PAGE-->
+ <div data-role="page" data-scroll="true" id="restaurant_attraction5" data-theme="a">
+ 
+	<!--Header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div class="logo ui-title">
+        <h1>Scusi on Dean</h1>               
+        </div>
+    </div>
+	<!--Header End -->
+      
+	<!--Content-->
+    <div data-role="content" data-theme="a"> 
+    
+		<!--Restaurant List-->	
+	  <div id="attraction" class="ui-grid-a attractionSection">
+	  
+      
+	   <!--Restaurant Jammie Stop Image Section-->
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a attractionHeading">
+       <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade">
+          <img class="attractionPop" src="http://i.imgur.com/kJPHjUO.png" alt="attraction"/>
+          </a>
+          <div data-role="popup" id="popupParis" data-overlay-theme="a" data-theme="b" data-corners="false">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">		Close</a>
+          <img class="popphoto" src="http://i.imgur.com/kJPHjUO.png" style="max-height:700px;" alt="dean"></div>      
+       
+          
+       </div></div>  
+       <div class="ui-block-a"><div class="ui-bar ui-bar-a attractionCategory">
+		<img src="http://i.imgur.com/Dqw1xkL.png" alt="attraction"/>
+       </div></div>                 
+			
+            <!--Description-->
+            <div class="description">
+			<div class="ui-block-a description" id="restaurant1description">
+				<h1 class="smallHeading">Description</h1>
+                <p>Looking for a spot for a great cup of coffee or some pasta to re-enact Lady and the Tramp? Scusi on Dean serves up delicious Italian dishes that will satisfy any grumbling tummies.</p>
+			
+			</div>
+            </div>
+			<!--Description End-->
+            	<div class="attraction">
+		
+			<!--Opening Hours-->
+			<div class="ui-block-a attraction" id="restaurant2">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/kVQh25m.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Opening Hours</h1>
+				<p>Mon - Sat: 08:00 - 23:00</p>
+				
+		
+				</div>
+				
+			</div>
+			<!-- Opening Hours End-->
+			
+			<!--Discounts
+			<div class="ui-block-a attraction" id="restaurant3">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/16tGCuo.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Discounts</h1>
+				<p>tba</p>
+                <p></p>
+				
+				</div>
+				
+			</div>
+			Discounts End-->
+		
+			<!--Known For-->
+			<div class="ui-block-a restaurant" id="restaurant4">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/PJ52PeO.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Known For</h1>
+				<p>Coffee</p> 					
+                <p>Bacon and Guacamole Burger</p>
+				
+				</div>
+				
+			</div>
+			<!-- Known For End-->
+			
+			<!--WIFI-->
+			<div class="ui-block-a restaurant" id="restaurant5">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/oF5yn67.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Wi-Fi</h1>
+				<p>Yes</p>
+				
+				</div>
+				
+			</div>
+			<!-- Wifi End-->
+            
+            <!--Contact-->
+			<div class="ui-block-a restaurant" id="restaurant5">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/CSZzReQ.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Contact</h1>
+				<p>(021) 823 2525</p>
+				<p></p>
+				
+				</div>
+				
+			</div>
+			<!-- Contact End-->
+            
+      
+		  </div> 
+          
+                <!--Directions-->
+            <div class="directions" >
+			<div class="ui-block-a directions" id="directions">
+				<a href="#restaurant_attraction1_directions" data-transition="slideup"><h1 class="smallHeading white">Do you need directions?</h1></a>
+			</div>
+            </div>
+			<!--Directions End-->
+            
+	   </div> <!-- Restaurant List End-->
+	   
+	</div>
+	<!--Content End-->
+      
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed"  
+	data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="main.html" data-icon="gear" 
+             class="left">
+             <img src="http://i.imgur.com/Rl00iAl.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<div>
+		<a href="#dean_map" data-transition="slideup" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>
+	<!--Back Link-->	
+	<div>
+		<a href="hungry_dean.html" data-icon="gear" 
+             class="right">
+             <img src="http://i.imgur.com/cIE2gKG.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+	<!--Footer End-->
+
+</div><!--Page End-->
+
+
+
+<!--------------------------------------------------------------------------------
+------------------------- RESTAURANT 5 DEAN PAGE END------------------------------------
+---------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------------------
+------------------------- DEAN MAP------------------------------------
+---------------------------------------------------------------------------------->
+
+<div data-role="page" id="dean_map" data-theme="a" data-url="hiddingh_map">
+      
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+     <div id="map" class="logo ui-title">
+        <h1>Dean Map</h1>    
+        </div>
+      </div>      
+
+      <div data-role="content" data-theme="a"> <!-- Content start-->
+      
+              <!--Key 1-->
+            <div class="key" >
+			<div class="ui-block-a key" id="key">
+				<h1 class="white">Key	    
+	             <img class="right" src="http://i.imgur.com/LilAIpZ.png" alt="logo"/> </h1>	
+			</div>
+            </div>
+			<!--Key 1 End-->
+        
+      
+      <!--Key 2-->
+            <div class="key">
+			<div class="ui-block-a key" id="key2">
+				<div class="ui-grid-a" id="keys">
+    	            <div class="ui-block-a">
+                    <h1>Culture</h1>
+	                </div>	             
+        
+                    <div class="ui-block-b">
+                    <h1>ATM</h1>
+	                </div>	             
+        
+                    <div class="ui-block-c">
+                    <h1>Health</h1>
+	                </div>	             
+        
+                    <div class="ui-block-d">
+                    <h1>Academic</h1>
+	                </div>	             
+        
+                    <div class="ui-block-e">
+                    <h1>Food & drink</h1>
+	                </div>	             
+                
+                
+				</div>	             
+			</div>
+            </div>
+			<!--Key 2 End-->
+      
+      
+      
+      
+      <!-- MAP start-->
+      <div id="elleaiello.nfkc3dp9" class="map"> </div> <!--id is the Map ID-->
+      <!-- MAP end-->
+
+      </div> <!-- Content end-->
+                  
+      
+    <!--Footer-->
+<div data-role="footer" data-position="fixed"  
+   data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="main.html" data-icon="gear" 
+             class="left">
+             <img src="http://i.imgur.com/Rl00iAl.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<div>
+		<a href="maps_hiddingh.html" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>
+	<!--Back Link-->	
+	<div>
+		<a href="#restaurant_attraction1" data-icon="gear" 
+             class="right">
+             <img src="http://i.imgur.com/cIE2gKG.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+<!--Footer End-->     
+  
+  </div>
+<!--------------------------------------------------------------------------------
+------------------------- HIDDINGH MAP END------------------------------------
+---------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------SCRIPTS START------------------------------------------>
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+
+
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZWxsZWFpZWxsbyIsImEiOiJhN2VhNzMwMjRiNmNiOTBhYzQ3NGNlNTgxZjllZmZhMiJ9.BLt-e4zD5svrZbJp7yAuHQ';
+//geoJSON data - converted from Google sheets to csv to geoJSON, then "FIELD1" replaced with "marker-color", "FIELD2" with "title", and "FIELD5" with "description".
+var geojson = [
+
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.413371,-33.9270054 ]
+    },
+    "properties": {
+    "marker-color":"#BCE784",
+    "title":"FNB",
+    "description":"",
+    "image":"http://i.imgur.com/EqDUrxh.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41749,-33.9344989 ]
+    },
+    "properties": {
+    "marker-color":"#BCE784",
+    "title":"Nedbank",
+    "description":"",
+    "image":"http://i.imgur.com/EqDUrxh.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.4107845,-33.9291 ]
+    },
+    "properties": {
+    "marker-color":"#BCE784",
+    "title":"Standard Bank",
+    "description":"",
+    "image":"http://i.imgur.com/EqDUrxh.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41749,-33.9344989 ]
+    },
+    "properties": {
+    "marker-color":"#BCE784",
+    "title":"ABSA",
+    "description":"",
+    "image":"http://i.imgur.com/EqDUrxh.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.42257,-33.93316 ]
+    },
+    "properties": {
+    "marker-color":"#585690",
+    "title":"Virgin Active",
+    "description":"A fully equipped gym aimed to ensure that you live \"happily ever active\".",
+    "image":"http://i.imgur.com/knamcgB.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41071,-33.92947 ]
+    },
+    "properties": {
+    "marker-color":"#585690",
+    "title":"Zone Fitness",
+    "description":"A fully equipped gym designed for and by women.",
+    "image":"http://i.imgur.com/knamcgB.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41851,-33.932282 ]
+    },
+    "properties": {
+    "marker-color":"#585690",
+    "title":"Cape CrossFit",
+    "description":"Cape Town’s original CrossFit that focuses on both strength and fitness.",
+    "image":"http://i.imgur.com/knamcgB.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.414121,-33.927204 ]
+    },
+    "properties": {
+    "marker-color":"#585690",
+    "title":"Long Street Baths",
+    "description":"Cape Town’s original CrossFit that focuses on both strength and fitness.",
+    "image":"http://i.imgur.com/knamcgB.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.4189,-33.934272 ]
+    },
+    "properties": {
+    "marker-color":"#5DD39E",
+    "title":"Wizardz",
+    "description":"Useful for any printing needs and finishing touches.",
+    "image":"http://i.imgur.com/zU5kST3.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.410951,-33.929433 ]
+    },
+    "properties": {
+    "marker-color":"#5DD39E",
+    "title":"Art & Ink",
+    "description":"A store specialising in arts and crafts supplies. ",
+    "image":"http://i.imgur.com/zU5kST3.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41834,-33.93403 ]
+    },
+    "properties": {
+    "marker-color":"#5DD39E",
+    "title":"Oxford Stationery",
+    "description":"A shop that fulfills any student’s stationery desires. ",
+    "image":"http://i.imgur.com/zU5kST3.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.415732,-33.927045 ]
+    },
+    "properties": {
+    "marker-color":"#5DD39E",
+    "title":"Centre for the Book",
+    "description":"A library with a mission to promote a culture of reading, writing, and publishing. ",
+    "image":"http://i.imgur.com/zU5kST3.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.412702,-33.929397 ]
+    },
+    "properties": {
+    "marker-color":"#348AA7",
+    "title":"Mabu Vinyl",
+    "description":"An alternative music store selling second hand vinyls, CDs, cassettes, comics and more. It’s the perfect spot for music lovers to spend hours sifting through both old and new records while sweet tunes fill their ears.   ",
+    "image":"http://i.imgur.com/vlBQhWz.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.412322,-33.930159 ]
+    },
+    "properties": {
+    "marker-color":"#348AA7",
+    "title":"Labia Theatre",
+    "description":"South Africa’s oldest Independent Art-Repertory Cinema.  Kick back with a boozy slushie while watching one of the latest blockbusters, or grab a box of popcorn and enjoy a thought-provoking documentary or art film. ",
+    "image":"http://i.imgur.com/vlBQhWz.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.417442,-33.929142 ]
+    },
+    "properties": {
+    "marker-color":"#348AA7",
+    "title":"SA National Gallery",
+    "description":"Fancy a little artistic inspiration? This art museum houses beautiful collections from South African, African, French, Dutch, and Flemish artists.  ",
+    "image":"http://i.imgur.com/vlBQhWz.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.416663,-33.927445 ]
+    },
+    "properties": {
+    "marker-color":"#348AA7",
+    "title":"Company Gardens",
+    "description":"Nestled next to the South African Parliament, this breath-taking garden is home to not only hundreds of squirrels, but to some of Cape Town’s oldest history.  Stroll through the veggie garden or lie on a picnic blanket under some trees.",
+    "image":"http://i.imgur.com/vlBQhWz.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.414922,-33.928594 ]
+    },
+    "properties": {
+    "marker-color":"#348AA7",
+    "title":"C.T. Planetarium",
+    "description":"No matter the weather, step into the Planetarium’s giant dome and travel through the wonders of space.  Learn a thing or two about planets, or simply gaze into the beauty of the recreated night sky. ",
+    "image":"http://i.imgur.com/vlBQhWz.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.410774,-33.928843 ]
+    },
+    "properties": {
+    "marker-color":"#513B56",
+    "title":"The Fat Cactus",
+    "description":"One tequila, two tequila, three tequila… If you’re looking for a fun time with great food topped off with some Mexican flavour, then The Fat Cactus is the spot for you! Be sure to make a booking, because Cape Townians love a festive fiesta.",
+    "image":"http://i.imgur.com/sgwN4yk.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41055,-33.930303 ]
+    },
+    "properties": {
+    "marker-color":"#513B56",
+    "title":"Yours Truly",
+    "description":"The trendiest space on Kloof Street and for good reason! Kick back in their gorgeous courtyard with a cup of coffee and your laptop or pop by for drinks with a group of friends. Don’t be surprised if you leave feeling a tad more hipster than when you arrived.",
+    "image":"http://i.imgur.com/sgwN4yk.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.410969,-33.930086 ]
+    },
+    "properties": {
+    "marker-color":"#513B56",
+    "title":"Hudsons",
+    "description":"Two words – burgers and beer! Tuck into a juicy burger and an ice cold beer with a couple of mates while a rugby game is on, or indulge in a thick milkshake with a loved one (or on your own – no judgment here).  ",
+    "image":"http://i.imgur.com/sgwN4yk.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41071,-33.92947 ]
+    },
+    "properties": {
+    "marker-color":"#513B56",
+    "title":"Myog",
+    "description":"From breakfast time to a midnight snack, there isn’t a time of day that Myog’s nutritious and delicious treats shouldn’t be enjoyed. Tuck into the sugary toppings like brownie and fudge or opt for the healthier fresh fruit and nuts.",
+    "image":"http://i.imgur.com/sgwN4yk.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.41667,-33.9316 ]
+    },
+    "properties": {
+    "marker-color":"#513B56",
+    "title":"Marias",
+    "description":"The prettiest little corner in town for a beautiful meal outside in the sun or a cosy, intimate dinner with a cup of mint tea.  Maria’s is Cape Town’s very own slice of Greek heaven away from the bustle of the city. ",
+    "image":"http://i.imgur.com/sgwN4yk.png"
+    }
+  }
+]
+}
+
+];//end GeoJson
+
+<!--initialise map-->
+var map = L.mapbox.map('elleaiello.nfkc3dp9', 'mapbox.streets-basic', {
+	scrollWheelZoom: false
+	//key... unnecessary?... needs javascript+styles....
+	//legendControl:{
+	//	position: "topcentre";
+	//}
+}).setView([-33.930026, 18.413782999999967], 16);<!--the bigger the number, the closer the zoom of initial view-->
+<!--is there a way to set zoom so that is automatically calculated to show all markers?-->
+
+//the code below (up to the "add geoJson features to map" ccomment) isnt working breaks the rest of the code!?
+// Add custom popups to each using our custom feature properties
+//myLayer.on('layeradd', function(e) {
+//    var marker = e.layer,
+//        feature = marker.feature;
+
+    // Create custom popup content
+//    var popupContent =  '<div target="_blank" class="popup">' + feature.properties.title + '<img src="' + feature.properties.image + '" />' +
+//                            feature.properties.description + 
+//                        '</div>';
+
+    // http://leafletjs.com/reference.html#popup
+//    marker.bindPopup(popupContent,{
+//        closeButton: false,
+//        minWidth: 320
+//    });
+//});
+
+<!--add geoJson features to map-->
+var myLayer = L.mapbox.featureLayer().addTo(map);
+myLayer.setGeoJSON(geojson);
+
+//key
+//map.legendControl.addLegend('<strong>My walk from the White House to the hill!</strong>');
+
+</script>
+
+
+
+
+<!--SCRIPTS END-->   
+	
+    </body>
+</html>

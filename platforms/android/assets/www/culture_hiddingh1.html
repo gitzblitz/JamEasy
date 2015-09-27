@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+    <meta name="viewport" content="user-scalable=no, 
+    initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width">
+       
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,100,300" rel="stylesheet" type="text/css">
+		
+        <!-- Mapbox-->
+        <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
+		<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
+        
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+        
+    <!--custom css*/-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        
+		<title>JamEasy</title>
+	</head>
+<body>
+
+<!--------------------------------------------------------------------------------
+------------------------- CULTURE 1 HIDDINGH PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+
+<!--CULTURE 1 HIDDINGH PAGE-->
+ <div data-role="page" data-scroll="true" id="culture_hiddingh1" data-theme="a">
+ 
+	<!--Header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div class="logo ui-title">
+        <h1>Mabu Vinyl</h1>               
+        </div>
+    </div>
+	<!--Header End -->
+      
+	<!--Content-->
+    <div data-role="content" data-theme="a"> 
+    
+		<!--Restaurant List-->	
+	  <div id="attraction" class="ui-grid-a attractionSection">
+	  
+      
+	   <!--Restaurant Jammie Stop Image Section-->
+	   <div class="ui-block-a"><div class="ui-bar ui-bar-a attractionHeading">
+       <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade">
+          <img class="attractionPop" src="http://i.imgur.com/N3PX4OB.png" alt="attraction"/>
+          </a>
+          <div data-role="popup" id="popupParis" data-overlay-theme="a" data-theme="b" data-corners="false">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">		Close</a>
+          <img class="popphoto" src="http://i.imgur.com/N3PX4OB.png" style="max-height:600px;" alt="hiddingh"></div>      
+       
+          
+       </div></div>  
+                
+			
+            <!--Description-->
+            <div class="description">
+			<div class="ui-block-a description" id="restaurant1description">
+				<h1 class="smallHeading">Description</h1>
+                <p>An alternative music store selling second hand vinyls, CDs, cassettes, comics and more. It's the perfect spot for music lovers to spend hours sifting through both old and new records while sweet tunes fill their ears.</p>
+			
+			</div>
+            </div>
+			<!--Description End-->
+            	<div class="attraction">
+		
+			<!--Opening Hours-->
+			<div class="ui-block-a attraction" id="restaurant2">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/kVQh25m.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Opening Hours</h1>
+				<p>Mon - Fri: 09:00 - 19:00</p>
+				<p>Sat: 09:00 - 18:00</p>
+				<p>Sun: 11:00 - 15:00 </p>
+				</div>
+				
+			</div>
+			<!-- Opening Hours End-->
+			
+			<!--Discounts
+			<div class="ui-block-a attraction" id="restaurant3">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/16tGCuo.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Discounts</h1>
+				<p >Lorem Ipsum Lorem Ipsum</p>
+                <p >Lorem Ipsum</p>
+				
+				</div>
+				
+			</div>
+			Discounts End-->
+		
+			<!--Known For
+			<div class="ui-block-a restaurant" id="restaurant4">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/PJ52PeO.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Known For</h1>
+				<p>Healthy Shots</p>
+				
+				</div>
+				
+			</div>
+			Known For End-->
+			
+			<!--WIFI
+			<div class="ui-block-a restaurant" id="restaurant5">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/oF5yn67.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">WI-Fi</h1>
+				<p>30MB Free</p>
+				
+				</div>
+				
+			</div>
+			Wifi End-->
+            
+            <!--Contact-->
+			<div class="ui-block-a restaurant" id="restaurant5">
+				<div class="ui-block-a">
+				<img class="circleImage2" src="http://i.imgur.com/CSZzReQ.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b">
+				<h1 class="smallHeading">Contact</h1>
+				<p>(021) 423 7635</p>
+				
+				</div>
+				
+			</div>
+			<!-- Contact End-->
+            
+      
+		  </div> 
+          
+                <!--Directions-->
+            <div class="directions" >
+			<div class="ui-block-a directions" id="directions">
+				<a href="#restaurant_attraction1_directions" data-transition="slideup"><h1 class="smallHeading white">Do you need directions?</h1></a>
+			</div>
+            </div>
+			<!--Directions End-->
+            
+	   </div> <!-- Restaurant List End-->
+	   
+	</div>
+	<!--Content End-->
+      
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed"  
+	data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="main.html" data-icon="gear" 
+             class="left">
+             <img src="http://i.imgur.com/Rl00iAl.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<div>
+		<a href="#hiddingh_map" data-transition="slideup" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>
+	<!--Back Link-->	
+	<div>
+		<a href="culture_hiddingh.html" data-icon="gear" 
+             class="right">
+             <img src="http://i.imgur.com/cIE2gKG.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+	<!--Footer End-->
+
+</div><!--Page End-->
+
+
+
+<!--------------------------------------------------------------------------------
+------------------------- CULTURE 1 HIDDINGH PAGE END------------------------------------
+---------------------------------------------------------------------------------->
+  </body>
+</html>

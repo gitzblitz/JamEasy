@@ -211,7 +211,7 @@ background-color:RGB(189,222,240);
 	width:38px;
 	height:auto;
 	float:left;
-	margin-left: 29%;
+	margin-left: 31.5%;
 }
 .right img{
 	float:right;
@@ -393,25 +393,27 @@ padding-left:5px;
 	text-align:center;
 	padding-bottom:2%;
 	border:0px solid transparent;
+	top:-1px;
+	height:180px;
 }
 .attractionHeading img{
 	width:100%;
-	height:155px;
+	
 	background-color:transparent;
 	}
 	
 .attractionCategory{
 	margin-top:-20%;
-	margin-left:74%;
+	margin-left:77%;
 	background-color:RGB(60,128,164);
-	width:70px;
-	height:65px;
+	width:60px;
+	height:60px;
 	border-radius:50%;
 	border: 3px solid white;
 }
 .attractionCategory img{
 width:80%;
-padding-top:10px;
+padding-top:6px;
 padding-right:7px;
 }
 .attractionSection{
@@ -419,7 +421,7 @@ padding-right:7px;
 	background-color:white;
 }
 .attraction{
-width:400%;	
+width:402%;	
 }
 .attraction p{
 width:70%;	
@@ -427,10 +429,12 @@ width:70%;
 .description{
 text-align:center;
 margin-bottom:-8px;
+padding:2px;
 }
 .description h1{
 text-align:center;
 margin-bottom:-12px;
+
 }
 
 .attraction .ui-block-a{
@@ -450,7 +454,7 @@ height:70px;
 colour:RGB(93,158,193);	
 padding:px;
 
-padding-top:8px;
+padding-top:13px;
 width:65%;
 line-height:0.3;
 text-align:left;
@@ -478,12 +482,14 @@ color:white;
 text-align:center;
 width:100%;
 margin-top:18px;
-
 background-color:RGB(93,158,193);	
 }
 .directions h1{
 text-align:center;
 padding:23px;	
+}
+.directions a{
+text-decoration:none;	
 }
 .yourdirections{
 margin-top:-20px;	
@@ -564,7 +570,7 @@ position:relative;
 top:0; 
 bottom:0; 
 width:100%;
-height:300px;
+min-height:300px;
 }
 .leaflet-popup-content{
 max-width:90%;	
@@ -607,6 +613,77 @@ background-color: rgba(0,0,0,0.85);
 	
 }
 
+
+.ui-collapsible-set h3{
+colour:white;
+background-color:RGB(188,231,132);		
+}
+
+.ui-collapsible-set #food{
+background-color:RGB(188,231,132);	
+}
+.ui-collapsible-set #culture{
+background-color:RGB(93,211,158);	
+}
+.ui-collapsible-set #health{
+background-color:RGB(52,138,167);	
+}
+.ui-collapsible-set #academic{
+background-color:RGB(82,81,116);	
+}
+.ui-collapsible-set #atm{
+background-color:RGB(81,59,86);	
+color:#fff;
+}
+.listItemNoIcon .ui-icon{
+	display: none;
+}
+.ui-collapsible-set{
+margin-bottom:0px;	
+margin-top:0px;	
+}
+.ui-collapsible-set p{
+padding-left:15px;
+font-size:120%;
+color:white;
+}
+
+.ui-collapsible-heading{
+color:#fff;
+}
+
+.gallery{
+	width:123.6%;
+	margin:20px;
+	padding:8px;
+	height:80px;
+	bottom:0;
+	margin-bottom:30px;
+}
+.gallery img{
+	margin-top:28px;
+	margin-right:22px;
+	width:25%;
+	margin-bottom:5px;
+}
+
+
+/*Scroll problem fix*/
+.scrollFix{
+	width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+	
+}
 
 
 /* Landscape layout (with min-width) */

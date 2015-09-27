@@ -64,7 +64,7 @@ var app = {
 
 app.initialize();
 
-<!-- SWIPE THROUGH IMAGES-->
+//SWIPE THROUGH IMAGES
 
 // Pagecreate will fire for each of the pages in this demo
 // but we only need to bind once so we use "one()"
@@ -148,6 +148,18 @@ $( document ).on( "pageshow", ".demo-page", function() {
     }
 });
 
-<!-- END OF PAGE SWIPE THROUG IMAGES-->
+// END OF PAGE SWIPE THROUG IMAGES-->
 
+//LIGHTBOX IMAGES-->
+
+$( document ).on( "pagecreate", function() {
+    $( ".photopopup" ).on({
+        popupbeforeposition: function() {
+            var maxHeight = $( window ).height() - 60 + "px";
+            $( ".photopopup img" ).css( "max-height", maxHeight );
+        }
+    });
+});
+
+// END LIGHTBOX-->
 

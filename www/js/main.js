@@ -161,5 +161,17 @@ $( document ).on( "pagecreate", function() {
     });
 });
 
+$( ".popup").live({
+    popupbeforeposition: function(event, ui) {
+    $("body").on("touchmove", false);
+}
+});
+
+$( ".popup" ).live({
+    popupafterclose: function(event, ui) {
+    $("body").unbind("touchmove");
+}
+});
+
 // END LIGHTBOX-->
 

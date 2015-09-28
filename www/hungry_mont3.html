@@ -148,10 +148,10 @@
 			 <div id="gallery" class="ui-block-a">
 			 
 			 
-				<img src="http://i.imgur.com/qbelVxMb.jpg" alt="attraction"/>
+				<img src="http://i.imgur.com/qbelVxM.png" alt="attraction"/>
 			
 		
-				<img src="http://i.imgur.com/hcUstmrb.jpg" alt="attraction"/>
+				<img src="http://i.imgur.com/hcUstmr.png" alt="attraction"/>
 			
        
 			
@@ -201,35 +201,5 @@
 ------------------------- RESTAURANT 3 MONT PAGE END------------------------------------
 ---------------------------------------------------------------------------------->
 
-
-
-<!---------------------------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------------------------->
-<!---------------------------------------SCRIPTS START------------------------------------------>
-<!---------------------------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------------------------->
-
-<!--SwipeRight Script-->
-<script>
-$( document ).on( "pageinit", "#home", function() {
-    $( document ).on( "swipeleft swiperight", "#home", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft"  ) {
-                $( "#right-panel" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel" ).panel( "open" );
-            }
-        }
-    });
-});
-
-</script>
-
-
-<!--SCRIPTS END-->   
-	
     </body>
 </html>

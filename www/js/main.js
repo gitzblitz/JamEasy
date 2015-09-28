@@ -191,6 +191,11 @@ $('#page-map').live("pageshow", function() {
     $('#map_canvas').gmap('refresh');
 });
 
+
+
+
+//MAPSSSS
+
 // Request display of directions, requires jquery.ui.map.services.js
 var toggleval = true; // used for test case: static locations
 $('.refresh').live("tap", function() {
@@ -254,9 +259,6 @@ $('.refresh').live("tap", function() {
     return false;
 });
 
-
-
-//maps
 
 
 

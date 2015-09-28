@@ -138,16 +138,20 @@ width:100%;
 .ui-header h1{
 padding-top:16px;
 }
+
+.ui-page .home{
+background-color:#BDDEF0;	
+}
 .home{
+	background-color:#BDDEF0;
 height:100%;
 padding:5px;	
 }
 .block{
-	background-color:RGB(93,158,193);
 	margin:5px;
 	margin-bottom:8px;
 	border:0px solid transparent;
-	
+	bottom:0;
 }
 
 .blockImage{

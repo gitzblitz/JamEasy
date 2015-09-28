@@ -19,11 +19,10 @@ body {
     );
     background-attachment:fixed;
     font-family: 'Roboto', sans-serif;
-    font-size:12px;
+    font-size:14px;
     height:100%;
     margin:0px;
     padding:0px;
-    
     width:100%;
 }
 
@@ -46,7 +45,7 @@ float:right;
 
 
 h1 {
-    font-size:20px;
+    font-size:22px;
 	font-weight:300;
     margin:0px;
     overflow:visible;
@@ -168,7 +167,7 @@ padding:0.02px;
 
 .blockHeading{
 
-	font-size:14px;
+	font-size:16px;
 	font-weight:400;
 	min-height:4em;
 	text-align:center;
@@ -238,14 +237,14 @@ border:0px solid transparent;
 }
 .jammies img{
 	width:100%;
-	height:120px;
+	height:100%;
 	background-color:RGB(189,222,240);
 	}
 
 .jammies h1{
 	padding-top:7px;
-		padding-bottom:1px;
-font-size:16px;
+	padding-bottom:1px;
+font-size:18px;
 font-weight:400;	
 }
 
@@ -266,54 +265,11 @@ font-weight:400;
 }
 
 
-
-<!--SWIPE RIGHT CSS-->
- /* Swipe works with mouse as well but often causes text selection. */
-#home * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-/* Arrow only buttons in the header. */
-#home .ui-header .ui-btn {
-    background: none;
-    border: none;
-    top: 9px;
-}
-#home .ui-header .ui-btn-inner {
-    border: none;
-}
-
-#home .panel{
-	background-color:RGB(60,128,164);
-	z-index:2000;
-	color:white;
-}
-
-#home .panel a{
-	color:white;
-	text-decoration:none;
-	font-weight:200;
-}
-
-#home .panel hr{
-border: 1px solid white;
-}
-
-/* Content styling. */
-dl { font-family:  'Roboto', sans-serif; padding: 1em; }
-dt { font-size: 2em; font-weight: bold; }
-dt span { font-size: .5em; color: #777; margin-left: .5em; }
-dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
-.back-btn { float: right; margin: 0 2em 1em 0; }
-
-
 .circleImage{
 padding:5px;
 width:88%;
 border-radius:50%;
+background-color:white;
 }
 .circleImage2{
 padding:8px;
@@ -325,6 +281,7 @@ border-radius:50%;
 	width:100%;
 	background-color:RGB(93,158,193);
 	margin-bottom:-2px;
+
 }
 
 .restaurantHeading{
@@ -339,7 +296,7 @@ border-radius:50%;
 
 .restaurantHeading img{
 	width:100%;
-	height:130px;
+	height:100%;
 	background-color:transparent;
 	}
 
@@ -347,21 +304,21 @@ border-radius:50%;
 width:400%;	
 }
 .restaurant .ui-block-a{
-height:90px;
+height:100px;
 text-align:center;
-padding:2px;
+padding:4px;
 width:25%;
-padding-top:4px;
+padding-top:6px;
 }
 .restaurant .ui-block-c{
-height:90px;
+height:100px;
 text-align:center;
 padding:4px;
 padding-top:6px;
 width:25%;
 }
 .restaurant .ui-block-b{
-height:90px;
+height:100px;
 padding:5px;
 padding-top:9px;
 width:50%;
@@ -370,18 +327,20 @@ text-align:left;
 }
 .col2 p{
 	color:white;
-	padding-left:5px;
+	padding-left:5.5px;
 }
 .col2 h1{
 color:white;
-font-size:13.5px;
+color:RGB(60,128,164);
+font-weight:500;
+font-size:16.5px;
 }
 .col3 img{
 width:80%;	
 height:auto;
 right:0px;
 padding-top:8px;
-padding-left:5px;
+padding-left:6px;
 }
 
 
@@ -429,7 +388,9 @@ width:70%;
 .description{
 text-align:center;
 margin-bottom:-8px;
-padding:2px;
+padding:5px;
+margin-left:5px;
+margin-right:5px;
 }
 .description h1{
 text-align:center;

@@ -175,3 +175,90 @@ $( ".popup" ).live({
 
 // END LIGHTBOX-->
 
+//Create the map then make 'displayDirections' request
+$('#page-map').live("pageinit", function() {
+    $('#map_canvas').gmap({'center' : mapdata.destination, 
+        'mapTypeControl' : true, 
+        'navigationControl' : true,
+        'navigationControlOptions' : {'position':google.maps.ControlPosition.LEFT_TOP}
+        })
+    .bind('init', function() {
+        $('.refresh').trigger('tap');        
+    });
+});
+
+$('#page-map').live("pageshow", function() {
+    $('#map_canvas').gmap('refresh');
+});
+
+// Request display of directions, requires jquery.ui.map.services.js
+var toggleval = true; // used for test case: static locations
+$('.refresh').live("tap", function() {
+    
+            // START: Tracking location with device geolocation
+            if ( navigator.geolocation ) { 
+                fadingMsg('Using device geolocation to get current position.');
+                navigator.geolocation.getCurrentPosition ( 
+                    function(position) {
+                        $('#map_canvas').gmap('displayDirections', 
+                        { 'origin' : new google.maps.LatLng(position.coords.latitude, position.coords.longitude), 
+                          'destination' : mapdata.destination, 'travelMode' : google.maps.DirectionsTravelMode.DRIVING},
+                        { 'panel' : document.getElementById('dir_panel')},
+                              function (result, status) {
+                                  if (status === 'OK') {
+                                      var center = result.routes[0].bounds.getCenter();
+                                      $('#map_canvas').gmap('option', 'center', center);
+                                      $('#map_canvas').gmap('refresh');
+                                  } else {
+                                    alert('Unable to get route');
+                                  }
+                              }
+                           );         
+                    }, 
+                    function(){ 
+                        alert('Unable to get location');
+                        $.mobile.changePage($('#page-home'), {}); 
+                    }); 
+                } else {
+                    alert('Unable to get location.');
+                }            
+            // END: Tracking location with device geolocation
+
+            // START: Tracking location with test lat/long coordinates
+            // Toggle between two origins to test refresh, force new route to be calculated
+      /*     var position = {};
+            if (toggleval) {
+                toggleval = false;
+                position = { coords: { latitude: 57.6969943, longitude: 11.9865 } }; // Gothenburg
+            } else {
+                toggleval = true;
+                position = { coords: { latitude: 58.5365967, longitude: 15.0373319 } }; // Motala
+            }
+	*/
+            $('#map_canvas').gmap('displayDirections', 
+                { 'origin' : new google.maps.LatLng(position.coords.latitude, position.coords.longitude), 
+                  'destination' : mapdata.destination, 
+                  'travelMode' : google.maps.DirectionsTravelMode.DRIVING },
+                  { 'panel' : document.getElementById('dir_panel') },
+                    function (result, status) {
+                        if (status === 'OK') {
+                            var center = result.routes[0].bounds.getCenter();
+                            $('#map_canvas').gmap('option', 'center', center);
+                            $('#map_canvas').gmap('refresh');
+                        } else {
+                            alert('Unable to get route');
+                        }
+                    }); 
+            // END: Tracking location with test lat/long coordinates
+    $(this).removeClass($.mobile.activeBtnClass);
+    return false;
+});
+
+
+
+//maps
+
+
+
+//maps end
+

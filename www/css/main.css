@@ -331,8 +331,8 @@ text-align:left;
 }
 .col2 h1{
 color:white;
-color:RGB(60,128,164);
-font-weight:500;
+color:RGB(34,108,147);
+font-weight:400;
 font-size:16.5px;
 }
 .col3 img{
@@ -346,6 +346,7 @@ padding-left:6px;
 
 
 .attractionHeading{
+	padding-top:-100px;
 	background-color:white;
 	width:200%;
 	font-weight:400;
@@ -356,8 +357,8 @@ padding-left:6px;
 	height:180px;
 }
 .attractionHeading img{
+
 	width:100%;
-	
 	background-color:transparent;
 	}
 	
@@ -365,7 +366,7 @@ padding-left:6px;
 	margin-top:-20%;
 	margin-left:77%;
 	background-color:RGB(60,128,164);
-	width:60px;
+	width:62px;
 	height:60px;
 	border-radius:50%;
 	border: 3px solid white;
@@ -399,7 +400,7 @@ margin-bottom:-12px;
 }
 
 .attraction .ui-block-a{
-height:70px;
+height:85px;
 text-align:center;
 padding:0px;
 
@@ -408,17 +409,17 @@ padding-top:4px;
 }
 .attraction .ui-block-a img{
 margin-left:-30px;	
+width:70px;
 }
 .attraction .ui-block-b{
 	margin-left:-40px;
-height:70px;
-colour:RGB(93,158,193);	
-padding:px;
-
-padding-top:13px;
+height:85px;
+padding:4px;
+padding-top:10px;
 width:65%;
 line-height:0.3;
 text-align:left;
+margin-bottom:5px;
 }
 .discount{
 	line-height:1.2;
@@ -444,7 +445,7 @@ text-align:center;
 width:100%;
 margin-top:18px;
 background-color:RGB(93,158,193);	
-margin-bottom:20px;
+
 
 }
 .directions h1{
@@ -467,22 +468,23 @@ margin-bottom:-12px;
 .key{
 text-align:right;
 width:100%;
+height:42px;
 margin-bottom:0px;
 padding-top:0px;
-background-color:RGB(189,222,240);	
+background-color:RGB(34,108,147);	
 }
 .key img{
-width:17%;	
+width:12%;	
 height:17px;
-padding-right:5px;
+padding-right:10px;
 float:right;
 }
 .key h1{
 text-align:left;
-font-size:18px;	
+font-size:20px;	
 font-weight:300;
 padding-left:15px;
-padding-top:15px;
+padding-top:12px;
 padding-bottom:4px;
 }
 #keys .ui-block-a{
@@ -505,7 +507,7 @@ text-align:center;
 font-size:12.5px;	
 margin-left:-15px;
 margin-top:-5px;
-padding-bottom:3px;
+padding-bottom:-2px;
 }
 #keys .ui-block-c{
 height:42px;

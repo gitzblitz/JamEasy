@@ -483,6 +483,8 @@ text-align:center;
 width:100%;
 margin-top:18px;
 background-color:RGB(93,158,193);	
+margin-bottom:20px;
+
 }
 .directions h1{
 text-align:center;
@@ -668,22 +670,36 @@ color:#fff;
 }
 
 
-/*Scroll problem fix*/
-.scrollFix{
-	width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-	
+.my_directions_map{
+
+margin-bottom:-35px;
+width:102%;
+margin:-5px;
+left:0;
+right:-10px;
 }
+
+.results{
+padding:10px;
+margin-left:15px;
+margin-right:15px;
+font-size:14px;
+}
+
+
+
+
+.mapz{
+margin:0;
+padding:0;
+height:100%;
+width:100%;
+}
+
+
+
+
+
 
 
 /* Landscape layout (with min-width) */

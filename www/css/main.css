@@ -271,19 +271,19 @@ font-weight:400;
 .circleImage{
 padding:5px;
 width:88%;
-     -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
- border-radius:50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+-khtml-border-radius: 50%;
+border-radius:50%;
 
 }
 .circleImage2{
 padding:8px;
 width:40%;
-     -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
- border-radius:50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+-khtml-border-radius: 50%;
+border-radius:50%;
 }
 
 .restaurantSection{

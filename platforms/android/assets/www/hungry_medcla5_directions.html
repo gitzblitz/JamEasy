@@ -136,142 +136,25 @@
     </div>
 	<!--Header End -->
       
-	<!--Content-->
-    <div data-role="content" data-theme="a"> 
+
     
-		<!--Restaurant List-->	
-	  <div id="attraction" class="ui-grid-a attractionSection">
-	  
-	  <!--Restaurant Image-->	
-		<div class="ui-block-a"><div class="ui-bar ui-bar-a attractionHeading">
-		
-          <img src="http://i.imgur.com/5NAlk46.png" alt="attraction"/>
-          
-		</div></div>  
-		<!--end Restaurant Image-->	   
-	
-      
-	  
-       <div class="ui-block-a"><div class="ui-bar ui-bar-a attractionCategory">
-		<img src="http://i.imgur.com/ca8W8me.png" alt="attraction"/>
-       </div></div>                 
-			
-            <!--Description-->
-            <div class="description">
-			<div class="ui-block-a description" id="restaurant1description">
-				<h1 class="smallHeading">Description</h1>
-                <p>Looking to stock your cupboard with healthy and tasty foods? Komati is a health haven! From nuts and dried fruit to gluten-free products, you're bound to find everything and more!</p>
-			
-			</div>
-            </div>
-			<!--Description End-->
-            	<div class="attraction">
-		
-			<!--Opening Hours-->
-			<div class="ui-block-a attraction" id="restaurant2">
-				<div class="ui-block-a">
-				<img class="circleImage2" src="img/icons/time.png" alt="restaurantImage"/>
-				</div>
-				<div class="ui-block-b">
-				<h1 class="smallHeading">Opening Hours</h1>
-				<p>Mon-Fri: 08.30 - 17.30</p>
-				<p>Sat: 08.30 - 14.00</p>
-		
-				</div>
-				
-			</div>
-			<!-- Opening Hours End-->
-			
-			<!--Discounts-->
-			<div class="ui-block-a attraction" id="restaurant3">
-				<div class="ui-block-a">
-				<img class="circleImage2" src="img/icons/discounts.png" alt="restaurantImage"/>
-				</div>
-				<div class="ui-block-b">
-				<h1 class="smallHeading">Discounts</h1>
-				<p>tba</p>
-                <p></p>
-				
-				</div>
-				
-			</div>
-			<!--Discounts End-->
-		
-			<!--Known For-->
-			<div class="ui-block-a restaurant" id="restaurant4">
-				<div class="ui-block-a">
-				<img class="circleImage2" src="img/icons/known.png" alt="restaurantImage"/>
-				</div>
-				<div class="ui-block-b">
-				<h1 class="smallHeading">Known For</h1>
-				<p>Nuts, seeds and dried fruit</p> 					
-                <p></p>
-				
-				</div>
-				
-			</div>
-			<!-- Known For End-->
-			
-			<!--WIFI-->
-			<div class="ui-block-a restaurant" id="restaurant5">
-				<div class="ui-block-a">
-				<img class="circleImage2" src="img/icons/wifi.png" alt="restaurantImage"/>
-				</div>
-				<div class="ui-block-b">
-				<h1 class="smallHeading">WI-Fi</h1>
-				<p>No</p>
-				
-				</div>
-				
-			</div>
-			<!-- Wifi End-->
-            
-            <!--Contact-->
-			<div class="ui-block-a restaurant" id="restaurant5">
-				<div class="ui-block-a">
-				<img class="circleImage2" src="img/icons/contact.png" alt="restaurantImage"/>
-				</div>
-				<div class="ui-block-b">
-				<h1 class="smallHeading">Contact</h1>
-				<p>(021) 448 2130</p>
-				<p></p>
-				
-				</div>
-				
-			</div>
-			<!-- Contact End-->
-            
-      
-		  </div> 
-		  
-		  <div class="gallery">
-			 <div id="gallery" class="ui-block-a">
-			 
-			 
-				<img src="http://i.imgur.com/34RJMFmb.jpg" alt="attraction"/>
-			
-		
-				<img src="http://i.imgur.com/cN46Q7Wb.jpg" alt="attraction"/>
-			
-       
-			
-			</div> 
-         </div>
-		  
-		  
-          
-                <!--Directions-->
+		<!--Directions heading-->
             <div class="directions" >
-			<div class="ui-block-a directions" id="directions">
-				<a href="#restaurant_attraction1_directions" data-transition="slideup"><h1 class="smallHeading white">Do you need directions?</h1></a>
+			<div class="ui-block-a directions yourdirections" id="yourdirections">
+				<h1 class="smallHeading white">Directions</h1>
 			</div>
             </div>
-			<!--Directions End-->
-            
-	   </div> <!-- Restaurant List End-->
-	   
-	</div>
-	<!--Content End-->
+			<!--Directions heading End--> 
+			<div class="my_directions_map">
+			<div class="ui-corner-all ui-shadow" style="padding:0.1em;">
+                    <div id="map_canvas" style="height:300px;"></div>
+            </div>
+			</div>
+            <div class="results" id="results" style="display:none;">
+                    <div id="directions"></div>
+            </div>
+
+
       
 
 	<!--Footer-->

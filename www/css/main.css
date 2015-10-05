@@ -26,6 +26,16 @@ body {
     width:100%;
 }
 
+.scrollable {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+ 
+            /* iOS specific fix, don't use it on Android devices */
+.scrollable > * {
+          webkit-transform: translateZ(0px);
+   }
+
 /* Portrait layout (default) */
 
 header {

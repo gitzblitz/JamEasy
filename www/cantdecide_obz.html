@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+    
+    <meta name="viewport" content="user-scalable=no, 
+    initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width">
+       
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,100,300" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+        
+    <!--custom css*/-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        
+		<title>JamEasy</title>
+
+	</head>
+<body> 
+    
+
+<!--------------------------------------------------------------------------------
+------------------------- ALL OBZ PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+        
+    
+<!--RESTAURANTS OBZ PAGE-->
+ <div data-role="page" data-scroll="true" id="all_obz" data-theme="a" data-url="all_obz">
+ 
+	<!--Header-->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a" 
+      data-content-theme="a" class="ui-bar-a ui-header">
+       
+	   <div class="logo ui-title">
+        <h1>Obz Square</h1>               
+        </div>
+    </div>
+	<!--Header End -->
+      
+	    
+      
+              <!--Key 1-->
+            <div class="key" >
+			<div class="ui-block-a key" id="key">
+				<h1 class="white">Key	    
+	             <img class="right" src="http://i.imgur.com/LilAIpZ.png" alt="logo"/> </h1>	
+			</div>
+            </div>
+			<!--Key 1 End-->
+        
+      
+      <!--Key 2-->
+            <div class="key">
+			<div class="ui-block-a key" id="key2">
+				<div class="ui-grid-a" id="keys">
+    	            <div class="ui-block-a">
+                    <h1>Culture</h1>
+	                </div>	             
+        
+                    <div class="ui-block-b">
+                    <h1>ATM</h1>
+	                </div>	             
+        
+                    <div class="ui-block-c">
+                    <h1>Health</h1>
+	                </div>	             
+        
+                    <div class="ui-block-d">
+                    <h1>Academic</h1>
+	                </div>	             
+        
+                    <div class="ui-block-e">
+                    <h1>Food & drink</h1>
+	                </div>	             
+                
+                
+				</div>	             
+			</div>
+            </div>
+			<!--Key 2 End-->
+      
+      <!-- MAP start-->
+		<div class="mapz">
+			<iframe scrolling="no" frameborder="no" style="height:220px; margin-bottom:-5px;" src="https://www.google.com/fusiontables/embedviz?q=select+col1+from+1pMNVSd10aszFcMolFBaYC-dGwFGKsZmaKEZz4E7V&amp;viz=MAP&amp;h=false&amp;lat=-33.940486119265735&amp;lng=18.4681766613769&amp;t=1&amp;z=17&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+		</div>	
+		<!-- MAP end-->
+	  
+	   <!--COLLAPSIBLE RESTAURANTS HIDDINGH-->
+		<div data-role="collapsible-set">
+
+			<div id="food" data-role="collapsible" data-collapsed="false">
+			<h3>FOOD & DRINK</h3>
+	
+    
+		<!--Restaurant List-->	
+	  <div id="restaurant" class="ui-grid-a allSection">
+       
+       	<div class="restaurant">
+			<!--Restaurant 1-->
+			<div class="ui-block-a" id="restaurant1">
+				<div class="ui-block-a col1">
+				<a href="hungry_obz1.html" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/5GiVBGk.png" alt="restaurantImage"/></a>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Timbuktu</h1>
+				<p>Cuisine: Ethiopian</p>
+				<p>Vibe: Date night</p>
+				<p>Cost: R280 for 2</p>
+				</div>
+				<div class="ui-block-c col3">
+				<img src="http://i.imgur.com/KWEn0cC.png" alt="category"/>
+				</div>
+			</div>
+			<!--Restaurant End-->
+		
+			<!--Restaurant 2-->
+			<div class="ui-block-a restaurant" id="restaurant2">
+				<div class="ui-block-a col1">
+				<a href="hungry_obz2.html" data-transition="flip">
+					<img class="circleImage" src="http://i.imgur.com/MzYnMdT.png" alt="restaurantImage"/>
+				</a>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Cocoa Cha Chi</h1>
+				<p>Cuisine: Cafe</p>
+				<p>Vibe: Comfy and casual</p>
+				<p>Cost: R250 for 2</p>
+				</div>
+				<div class="ui-block-c col3">
+				<img src="http://i.imgur.com/Dqw1xkL.png" alt="category"/>
+				</div>
+			</div>
+			<!-- Restaurant End-->
+			
+			<!--Restaurant 3-->
+			<div class="ui-block-a restaurant" id="restaurant3">
+				<div class="ui-block-a col1">
+				<a href="hungry_obz3.html" data-transition="flip">
+					<img class="circleImage" src="http://i.imgur.com/q4GtJCS.png" alt="restaurantImage"/>
+				</a>
+				</div>
+				<div class="ui-block-b col2">
+			    <h1>Hello Sailor</h1>
+				<p>Cuisine: Cafe</p>
+				<p>Vibe: Comfy and casual</p>
+				<p>Cost: R200 for 2</p>
+				</div>
+				<div class="ui-block-c col3">
+				<img src="http://i.imgur.com/Dqw1xkL.png" alt="category"/>
+				</div>
+			</div>
+			<!--Restaurant End-->
+		
+			<!--Restaurant 4-->
+			<div class="ui-block-a restaurant" id="restaurant4">
+				<div class="ui-block-a col1">
+				<a href="hungry_obz4.html" data-transition="flip">
+					<img class="circleImage" src="http://i.imgur.com/Ai4Zsgt.png" alt="restaurantImage"/>
+				</a>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Mango Ginger</h1>
+				<p>Cuisine: Health & Bakery</p>
+				<p>Vibe: Hidden gem</p>
+				<p>Cost: R280 for 2</p>
+				</div>
+				<div class="ui-block-c col3">
+				<img src="http://i.imgur.com/6wQhk9Z.png" alt="category"/>
+				</div>
+			</div>
+			<!-- Restaurant End-->
+			
+			<!--Restaurant 5-->
+			<div class="ui-block-a restaurant" id="restaurant5">
+				<div class="ui-block-a col1">
+				<a href="hungry_obz5.html" data-transition="flip">
+					<img class="circleImage" src="http://i.imgur.com/hR80l8D.png" alt="restaurantImage"/>
+				</a>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Mimi</h1>
+				<p>Cuisine: Cafe</p>
+				<p>Vibe: Health nut</p>
+				<p>Cost: R200 for 2</p>
+				</div>
+				<div class="ui-block-c col3">
+				<img src="http://i.imgur.com/sq1B2H4.png" alt="category"/>
+				</div>
+			</div>
+			<!-- Restaurant End-->
+            
+      
+		  </div> 
+	   </div> <!-- Restaurant List End-->
+	   
+
+			</div>
+	
+			<div id="culture" data-role="collapsible">
+			<h3>CULTURE</h3>
+
+    
+		<!--Culture List-->	
+	  <div id="restaurant" class="ui-grid-a allSection">
+       
+       	<div class="threecolumn">
+			<!--Culture 1-->
+			<div class="ui-block-a" id="culture_attraction1">
+				<div class="ui-block-a col1">
+				<a href="culture_obz1.html" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/D4PycjU.png" alt="cultureImage"/></a>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Wafawako</h1>
+				<p>What: Clothing store</p>
+				<p>Cost: Varies</p>
+				<p>Contact: (021) 447 3440</p>
+				</div>
+				
+			</div>
+			<!--Culture End-->
+		
+			<!--Culture 2-->
+			<div class="ui-block-a restaurant" id="culture_attraction2">
+				<div class="ui-block-a col1">
+				<a href="culture_obz2.html" data-transition="flip"><img class="circleImage" src="http://i.imgur.com/ANi3wHC.png" alt="cultureImage"/></a>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Grand Funk</h1>
+				<p>What: Vintage store</p>
+				<p>Cost: Varies</p>
+				<p>Contact: (021) 447 5600</p>
+				</div>
+			</div>
+			<!-- Culture End-->
+					
+		  </div> 
+	   </div> <!-- Culture List End-->
+	   
+
+			</div>
+	
+	
+			<div id="health" data-role="collapsible">
+			<h3>HEALTH</h3>
+	
+    
+		<!--Restaurant List-->	
+	  <div id="restaurant" class="ui-grid-a allSection">
+
+       	<div class="threecolumn">
+			<!--Restaurant 1-->
+			<div class="ui-block-a" id="restaurant1">
+				<div class="ui-block-a col1">
+				<img class="circleImage" src="http://i.imgur.com/qaRBJfH.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Oops!</h1>
+				<p>You won't find anything</p>
+				<p>healthy here!</p>
+				</div>
+			</div>
+			<!--Restaurant End-->
+		
+		  </div> 
+	   </div> <!-- Restaurant List End-->
+
+			</div>
+	
+			<div id="academic" data-role="collapsible" style="text-align:center;" class="listItemNoIcon">
+			<h3>ACADEMIC</h3>
+	
+    
+		<!--Restaurant List-->	
+	  <div id="restaurant" class="ui-grid-a allSection">
+
+       	<div class="threecolumn">
+			<!--Restaurant 1-->
+			<div class="ui-block-a" id="restaurant1">
+				<div class="ui-block-a col1">
+				<img class="circleImage" src="http://i.imgur.com/qaRBJfH.png" alt="restaurantImage"/>
+				</div>
+				<div class="ui-block-b col2">
+				<h1>Oops!</h1>
+				<p>You won't find anything</p>
+				<p>academic here!</p>
+				</div>
+			</div>
+			<!--Restaurant End-->
+		
+		  </div> 
+	   </div> <!-- Restaurant List End-->
+	   
+
+			</div>
+	
+	
+			<div id="atm" data-role="collapsible">
+			<h3>ATMS</h3>
+
+    
+		<!--ATM List-->	
+	  <div id="restaurant" class="ui-grid-a allSection"> 
+       
+       	<div class="threecolumn">
+
+			<!--ATM 1-->
+			<div class="ui-block-a" id="atm1">
+				<div class="ui-block-a col1">
+					<img class="circleImage" src="http://i.imgur.com/S7hpnsY.png" alt="atmImage"/>
+				</div>
+				<div class="ui-block-b col2">
+					<h1>FNB</h1>
+				</div>
+			</div>
+			<!--ATM 1 End-->
+		
+			<!--ATM 2-->
+			<div class="ui-block-a" id="atm2">
+				<div class="ui-block-a col1">
+					<img class="circleImage" src="http://i.imgur.com/hQxvyv4.png" alt="atmImage"/>
+				</div>
+				<div class="ui-block-b col2">
+					<h1>Nedbank</h1>
+				</div>
+			</div>
+			<!-- ATM 2 End-->
+			
+			<!--ATM 3-->
+			<div class="ui-block-a" id="atm3">
+				<div class="ui-block-a col1">
+					<img class="circleImage" src="http://i.imgur.com/GLzgVxG.png" alt="atmImage"/>
+				</div>
+				<div class="ui-block-b col2">
+					<h1>Standard Bank</h1>
+				</div>	
+			</div>
+			<!--Academic 3 End-->
+		
+			<!--ATM 4-->
+			<div class="ui-block-a" id="atm4">
+				<div class="ui-block-a col1">
+					<img class="circleImage" src="http://i.imgur.com/Ble8yDm.png" alt="atmImage"/>
+				</div>
+				<div class="ui-block-b col2">
+					<h1>ABSA</h1>
+				</div>	
+			</div>
+			<!-- ATM 4 End-->          
+      
+		  </div> 
+	   </div> <!-- ATM List End-->
+	   
+
+			</div>
+	
+		</div>
+
+	  	   <!--COLLAPSIBLE ALL HIDDINGH END-->
+	  
+	  
+
+
+  
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed"  
+	data-tap-toggle="false" class="ui-bar ui-footer">
+
+	<!--HOME Link-->	
+	<div>
+		<a href="main.html" data-icon="gear" 
+             class="left">
+             <img src="http://i.imgur.com/Rl00iAl.png" alt="logo"/> 
+        </a>
+	</div>
+	<!--MAPS Link-->
+	<!--<div>
+		<a href="maps.html" data-icon="gear" 
+             class="middle" style="text-align:center;">
+             <img src="http://i.imgur.com/rO2aQ0q.png" style="text-align:center;" alt="logo"/> 
+        </a>
+	</div>-->
+	<!--Back Link-->	
+	<div>
+		<a href="cantdecideWhere.html" data-icon="gear" 
+             class="right">
+             <img src="http://i.imgur.com/cIE2gKG.png" alt="logo"/> 
+        </a>
+	</div>
+	</div>
+	<!--Footer End-->
+
+</div><!--Page End-->
+
+<!--------------------------------------------------------------------------------
+------------------------- END ALL HIDDINGH PAGE ------------------------------------
+---------------------------------------------------------------------------------->
+
+  </body>
+</html>

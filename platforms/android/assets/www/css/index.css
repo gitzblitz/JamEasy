@@ -32,13 +32,14 @@ body {
 /* Portrait layout (default) */
 .app {
     background:url(../img/splash-screen.png) no-repeat center top; /* 170px x 200px */
-	background-size:100% 100%;
+	background-size:100% auto;
     position:absolute;             /* position in the center of the screen */
     left:0;
     top:0;
     height:100%;                   /* text area height */
     width:100%;                   /* text area width */
     text-align:center;
+	background-position:center center;
     /*padding:180px 0px 0px 0px;*/     /* image height is 200px (bottom 20px are overlapped with text) */
 /*    margin:-115px 0px 0px -112px; */ /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */

@@ -13,11 +13,11 @@
 	<plugin name="org.apache.cordova.geolocation" source="pgb"/>
 	
     <access origin="*" />
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
     <preference name="orientation" value="portrait"/>
 =======
 	
->>>>>>> CourtneyLyn/master
+<!-- >>>>>>> CourtneyLyn/master -->
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
